@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 export default function HomePage() {
   const [prompt, setPrompt] = useState("");
@@ -46,12 +47,13 @@ export default function HomePage() {
 
 
         {/* Animated word cycling */}
-        <p className="text-lg text-gray-200">
+        <div className="text-lg p-2 text-gray-200 w-[100vw]">
           Your website is going to be about{"\n"}
-          <div className="ml-2 bg-gray-900 p-2 text-pink-400 font-semibold text-xs font-mono">
-            {prompt}
+          <div className="ml-2 max-w-full overflow-x-scroll bg-gray-900 p-2 text-pink-400 font-semibold text-xs font-mono break-words whitespace-pre-wrap">
+            <ReactMarkdown>{prompt}</ReactMarkdown>
           </div>
-        </p>
+        </div>
+
 
       </div>
 
