@@ -34,7 +34,7 @@ Return ONLY the final HTML+CSS code, nothing else.
         const text = response.text || "";
 
         return NextResponse.json({ text });
-    } catch (err: any) {
+    } catch (err) {
         console.error(err);
         return NextResponse.json(
             { error: "Failed to generate site" },
