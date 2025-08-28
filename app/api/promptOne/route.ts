@@ -20,7 +20,9 @@ Output must be in valid JSON format with the following structure, containing no 
   "tagline": "A short funny tagline",
   "concept": "A paragraph describing the core absurd premise",
   "features": ["Feature 1", "Feature 2", "Feature 3"]
-}`,
+}
+hi manan
+`,
     });
 
     return NextResponse.json({ text: response.text });
