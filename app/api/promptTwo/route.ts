@@ -24,6 +24,8 @@ Instructions:
 
 Output Format (IMPORTANT):
 Return ONLY the final HTML+CSS code, nothing else.
+how is life
+
 `;
 
         const response = await ai.models.generateContent({
